@@ -1,0 +1,37 @@
+public class produto {
+    private string nome;
+    private double preco;
+
+    public produto (String nome, double preco){
+        this.nome = nome;
+        this.preco = preco;
+
+    }
+    \\ getters e setters 
+}
+
+public class carrinho {
+    private List<produto> produtos;
+    
+    public carrinho() {
+        produtos = new ArrayList<>();
+    }
+    public void adicionarproduto(Produto produto) {
+        produto.add(produto);
+    }
+    public void removerproduto(produto produto) {
+        protudos.remove(produto);
+    }
+    \\ outros metodos conforme necessario 
+}
+
+public class loja {
+    public static void main(string[]args){
+        produto produto1 = new produto("produto 1", 100.0);
+        produto produto2 = new produto("produto 2", 200.0);
+
+        carrinho carrinho = new carrinho();
+        carrinho.adicionarproduto(produto1);
+        carrinho.adicionarproduto(produto2);
+    }
+}
